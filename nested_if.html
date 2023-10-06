@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if</title>
+</head>
+<body>
+    <p>
+        <label for="">Maskapai : </label><label id="maskapai"></label>
+    </p>
+    <p>
+        <label for="">Jurusan : </label><label id="jurusan"></label>
+    </p>
+    <p>
+        <label for="">Harga : </label><label id="harga"></label>
+    </p>
+    <script>
+        let maskapai = "Batik"
+        let jurusan = "Medan-Jakarta"
+        let harga
+        if (maskapai === "Garuda") {
+            if (jurusan === "Medan-Jakarta") {
+                harga = 3000000
+            }else if(jurusan === "Medan-Batam"){
+                harga = 2000000
+            }else{
+                harga = 0
+                document.write("Jurusan tidak diketahui")
+            }
+        }else if (maskapai === "Batik") {
+            if (jurusan === "Medan-Jakarta") {
+                harga = 1500000
+            }else if(jurusan === "Medan-Batam"){
+                harga = 1000000
+            }else{
+                harga = 0
+                document.write("Jurusan tidak diketahui")
+            }
+        }else{
+            document.write("Maskapai tidak diketahui")
+        }
+        document.getElementById("maskapai").innerHTML = maskapai
+        document.getElementById("jurusan").innerHTML = jurusan
+        document.getElementById("harga").innerHTML = harga
+    </script>
+</body>
+</html>
