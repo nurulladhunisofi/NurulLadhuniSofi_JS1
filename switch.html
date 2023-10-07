@@ -6,45 +6,15 @@
     <title>Switch</title>
 </head>
 <body>
-    <p>
-        <label for="">Nama : </label><label id="nama"></label>
-    </p>
-    <p>
-        <label for="">Nilai : </label><label id="nilai"></label>
-    </p>
-    <p>
-        <label for="">Huruf : </label><label id="huruf"></label>
-    </p>
-    <script>
-        let nama = "andi"
-        let nilai = 70
-        let huruf 
-
-        switch (true) {
-            case nilai >= 80 && nilai <= 100:
-                huruf = "A"
-                break;
-            case nilai >= 60 && nilai <= 79:
-            huruf = "B"
-            break;
-            case nilai >= 40 && nilai <= 59:
-                huruf = "C"
-                break;
-            case nilai >= 10 && nilai <= 39:
-            huruf = "D"
-            break;
-            case nilai >= 0 && nilai <= 9:
-                huruf = "E"
-                break;
-            default:
-                huruf = "^"
-                document.write("nilai diluar 0-100")
-                break;
-        }
-        console.log(huruf)
-        document.getElementById("nama").innerHTML = nama
-        document.getElementById("nilai").innerHTML = nilai
-        document.getElementById("huruf").innerHTML = huruf
-    </script>
+    <form id="penilaian" action="#">
+        <label for="">Nama</label>
+        <input name="nama" type="text">
+        <br>
+        <label for="">Nilai</label>
+        <input name="nilai" type="text">
+        <br>
+        <input type="submit" value="Kirim" onclick="grade()">
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>

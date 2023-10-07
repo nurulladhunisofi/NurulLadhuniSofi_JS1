@@ -18,35 +18,9 @@
         <input type="submit" value="*" onclick="perkalian()">
         <input type="submit" value="/" onclick="pembagian()">
     </form>
+    <script src="script.js"></script>
     <script>
-        function penjumlahan() {
-            let bil1 = parseInt(kalkulator.bil1.value)
-            let bil2 = parseInt(kalkulator.bil2.value)
-            let hasil = bil1 + bil2
-            alert("Hasilnya adalah = " + hasil)
-        }
-        function pengurangan() {
-            let bil1 = parseInt(kalkulator.bil1.value)
-            let bil2 = parseInt(kalkulator.bil2.value)
-            let hasil = bil1 - bil2
-            alert("Hasilnya adalah = " + hasil)
-        }
-        function pembagian() {
-            let bil1 = parseInt(kalkulator.bil1.value)
-            let bil2 = parseInt(kalkulator.bil2.value)
-            if (bil2==0) {
-                alert("Pembagian tidak bisa dijalankan dan hasilnya infinity")
-            }else{
-                let hasil = bil1 / bil2
-                alert("Hasilnya adalah = " + hasil)
-            }
-        }
-        function perkalian() {
-            let bil1 = parseInt(kalkulator.bil1.value)
-            let bil2 = parseInt(kalkulator.bil2.value)
-            let hasil = bil1 * bil2
-            alert("Hasilnya adalah = " + hasil)
-        }
+        
     </script>
 </body>
 </html>
